@@ -13,8 +13,9 @@
 
 public class Picture
 {
-    private Square wall;
+    
     private Square window;
+    private Square wall;
     private Triangle roof;
     private Circle paisaje;
     private Circle sun;
@@ -79,6 +80,9 @@ public class Picture
     public void moveSun()
     {
         sun.slowMoveVertical(180);
+        wall.changeColor("black");
+        window.changeColor("white");
+        
     }
     
     
