@@ -9,6 +9,8 @@
  * @author  Michael Kšlling and David J. Barnes
  * @version 2011.07.31
  */
+
+
 public class Picture
 {
     private Square wall;
@@ -16,13 +18,15 @@ public class Picture
     private Triangle roof;
     private Circle paisaje;
     private Circle sun;
-    
+   
     /**
      * Constructor for objects of class Picture
      */
+    
     public Picture()
     {
-        // nothing to do... instance variables are automatically set to null
+  
+     // nothing to do... instance variables are automatically set to null
     }
 
     /**
@@ -69,6 +73,15 @@ public class Picture
       
     }
 
+    /**
+     * Slowly move the circle vertically by 'distance' pixels.
+     */
+    public void moveSun()
+    {
+        sun.slowMoveVertical(180);
+    }
+    
+    
     /**
      * Change this picture to black/white display
      */
