@@ -79,7 +79,7 @@ public class Picture
      */
     public void moveSun()
     {
-        sun.slowMoveVertical(180);
+        sun.slowMoveVertical(185);
         wall.changeColor("black");
         window.changeColor("white");
         
