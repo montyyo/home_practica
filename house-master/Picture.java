@@ -68,16 +68,20 @@ public class Picture
         sun.changeSize(80);
         sun.makeVisible();
         
-        hombre = new Person();
-        hombre.moveHorizontal(-250);
-        hombre.makeVisible();
-        hombre.slowMoveHorizontal(100);
+        
         
         
         
       
     }
 
+    public void moveHombre()
+    {
+    hombre = new Person();
+        hombre.moveHorizontal(-250);
+        hombre.makeVisible();
+        hombre.slowMoveHorizontal(110);
+    }
     /**
      * Slowly move the circle vertically by 'distance' pixels.
      */
