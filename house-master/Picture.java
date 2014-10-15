@@ -82,7 +82,8 @@ public class Picture
         sun.slowMoveVertical(185);
         wall.changeColor("black");
         window.changeColor("white");
-        
+        roof.changeColor("black");
+        paisaje.changeColor("black");
     }
     
     
