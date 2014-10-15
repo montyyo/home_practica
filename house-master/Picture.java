@@ -19,7 +19,7 @@ public class Picture
     private Triangle roof;
     private Circle paisaje;
     private Circle sun;
-   
+    private Person hombre;
     /**
      * Constructor for objects of class Picture
      */
@@ -68,6 +68,10 @@ public class Picture
         sun.changeSize(80);
         sun.makeVisible();
         
+        hombre = new Person();
+        hombre.moveHorizontal(-250);
+        hombre.makeVisible();
+        hombre.slowMoveHorizontal(100);
         
         
         
@@ -84,6 +88,8 @@ public class Picture
         window.changeColor("white");
         roof.changeColor("black");
         paisaje.changeColor("black");
+        sun.changeColor("black");
+        //tambien podemos llamar al metodo setBlackAndWhite
     }
     
     
